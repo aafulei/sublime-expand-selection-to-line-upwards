@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "Selection",
+        "id": "selection",
+        "children":
+        [
+            {
+                "command": "expand_selection_to_line_upwards",
+                "caption": "Expand Selection to Line Upwards"
+            }
+        ]
+    }
+]

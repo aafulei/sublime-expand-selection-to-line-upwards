@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+alt+l"], "command": "expand_selection_to_line_upwards" }
+]

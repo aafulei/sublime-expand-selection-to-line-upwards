@@ -1,0 +1,44 @@
+Like the built-in Expand Selection to Line command, but expands upwards instead of downwards.
+
+How to Use
+----------
+- Keyboard Shortcut
+
+    - Windows / Linux: Ctrl + Alt + L
+    - macOS:           Cmd  + Opt + L
+
+- Main Menu: Selection > Expand Selection to Line Upwards
+
+- Command Palette: Expand Selection to Line Upwards
+
+Customize Keyboard Shortcut
+---------------------------
+You can set up your own keyboard shortcut in Preferences > Key Bindings.
+
+For example,
+
+- Windows / Linux
+
+{ "keys": ["ctrl+shift+l"], "command": "expand_selection_to_line_upwards" },
+{ "keys": ["ctrl+alt+l"], "command": "split_selection_into_lines" },
+
+- macOS
+
+{ "keys": ["super+shift+l"], "command": "expand_selection_to_line_upwards" },
+{ "keys": ["super+alt+l"], "command": "split_selection_into_lines" },
+
+What If I Over-expanded?
+------------------------
+Use Soft Undo (Ctrl + U or Cmd + U).
+
+Author
+------
+Aaron Fu Lei
+
+License
+-------
+MIT
+
+Homepage
+--------
+https://github.com/aafulei/sublime-expand-selection-to-line-upwards
