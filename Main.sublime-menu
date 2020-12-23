@@ -1,0 +1,22 @@
+[
+    {
+        "id": "selection",
+        "children":
+        [
+            {
+                "caption": "-"
+            },
+            {
+                "caption": "Expand Selection to Line Upwards",
+                "command": "expand_selection_to_line_upwards"
+            },
+            {
+                "caption": "Expand Selection to Line Downwards",
+                "command": "expand_selection_to_line_downwards"
+            },
+            {
+                "caption": "-"
+            }
+        ]
+    }
+]

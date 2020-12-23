@@ -1,0 +1,37 @@
+Expand Selection to Line Upwards
+================================
+Expand selection to line. Upwards or downwards.
+
+How to Use
+----------
+1. Key Bindings
+
+No default key bindings. Define your own.
+
+Recommended Key Bindings
+
+{ "keys": ["primary+shift+l"], "command": "expand_selection_to_line_upwards" },
+{ "keys": ["primary+l"], "command": "expand_selection_to_line_downwards" },
+
+| Command                            | Windows / Linux  | macOS           |
+| ---------------------------------- | ---------------- | --------------- |
+| Expand Selection to Line Upwards   | Ctrl + Shift + L | Cmd + Shift + L |
+| Expand Selection to Line Downwards | Ctrl + L         | Cmd + L         |
+
+2. Main Menu
+
+Selection > Expand Selection to Line Upwards
+Selection > Expand Selection to Line Downwards
+
+3. Command Palette
+
+Expand Selection to Line Upwards
+Expand Selection to Line Downwards
+
+Author
+------
+Aaron Fu Lei
+
+License
+-------
+MIT
