@@ -1,15 +1,16 @@
 Expand Selection to Line Upwards
 ================================
-Expand selection to line. Upwards or downwards.
+(Tuesday 4 July, 2023)
 
-How to Use
-----------
-1. Key Bindings
+We added 2 more commands in our upgrade from version 2.0.0 to version 4.0.0:
 
-No default key bindings. Define your own.
+    -  Shrink Selection by Line Upwards
+    -  Shrink Selection by Line Downwards
+
+which give the user more flexibility in undoing the expansions.
 
 Recommended Key Bindings
-
+------------------------
 { "keys": ["primary+i"], "command": "expand_selection_to_line_upwards" },
 { "keys": ["primary+l"], "command": "expand_selection_to_line_downwards" },
 { "keys": ["primary+shift+l"], "command": "shrink_selection_by_line_upwards" },
@@ -22,24 +23,22 @@ Recommended Key Bindings
 | Shrink Selection by Line Upwards   | Ctrl + Shift + L | Cmd + Shift + L |
 | Shrink Selection by Line Downwards | Ctrl + Shift + I | Cmd + Shift + I |
 
-2. Main Menu
-
-Selection > Expand Selection to Line Upwards
-Selection > Expand Selection to Line Downwards
-Selection > Shrink Selection by Line Upwards
-Selection > Shrink Selection by Line Downwards
-
-3. Command Palette
-
-Expand Selection to Line Upwards
-Expand Selection to Line Downwards
-Shrink Selection by Line Upwards
-Shrink Selection by Line Downwards
-
-Author
-------
-Aaron Fu Lei
-
-License
+Version
 -------
-MIT
+Why, you might wonder, is this one called version 4.0.0?
+
+Version 1.0.0 offers 1 command:
+
+    - Expand Selection to Line Upwards
+
+Version 2.0.0 offers 2 commands:
+
+    - Expand Selection to Line Upwards
+    - Expand Selection to Line Downwards
+
+Version 4.0.0 offers 4 commands:
+
+    - Expand Selection to Line Upwards
+    - Expand Selection to Line Downwards
+    - Shrink Selection by Line Upwards
+    - Shrink Selection by Line Downwards

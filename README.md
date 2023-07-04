@@ -19,20 +19,26 @@ No default key bindings. Define your own.
 #### Recommended Key Bindings
 
 ```
-{ "keys": ["primary+shift+l"], "command": "expand_selection_to_line_upwards" },
+{ "keys": ["primary+i"], "command": "expand_selection_to_line_upwards" },
 { "keys": ["primary+l"], "command": "expand_selection_to_line_downwards" },
+{ "keys": ["primary+shift+l"], "command": "shrink_selection_by_line_upwards" },
+{ "keys": ["primary+shift+i"], "command": "shrink_selection_by_line_downwards" },
 ```
 
 | Command                            | Windows / Linux                                   | macOS                                            |
 | ---------------------------------- | ------------------------------------------------- | ------------------------------------------------ |
-| Expand Selection to Line Upwards   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> | <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> |
+| Expand Selection to Line Upwards   | <kbd>Ctrl</kbd> + <kbd>I</kbd>                    | <kbd>Cmd</kbd> + <kbd>I</kbd>                    |
 | Expand Selection to Line Downwards | <kbd>Ctrl</kbd> + <kbd>L</kbd>                    | <kbd>Cmd</kbd> + <kbd>L</kbd>                    |
+| Shrink Selection by Line Upwards   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> | <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> |
+| Shrink Selection by Line Downwards | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> |
 
 ### 2. Main Menu
 
 ```
 Selection > Expand Selection to Line Upwards
 Selection > Expand Selection to Line Downwards
+Selection > Shrink Selection by Line Upwards
+Selection > Shrink Selection by Line Downwards
 ```
 
 ### 3. Command Palette
@@ -40,6 +46,8 @@ Selection > Expand Selection to Line Downwards
 ```
 Expand Selection to Line Upwards
 Expand Selection to Line Downwards
+Shrink Selection by Line Upwards
+Shrink Selection by Line Downwards
 ```
 
 ## Author

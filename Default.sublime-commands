@@ -6,5 +6,13 @@
     {
         "caption": "Expand Selection to Line Downwards",
         "command": "expand_selection_to_line_downwards"
+    },
+    {
+        "caption": "Shrink Selection by Line Upwards",
+        "command": "shrink_selection_by_line_upwards"
+    },
+    {
+        "caption": "Shrink Selection by Line Downwards",
+        "command": "shrink_selection_by_line_downwards"
     }
 ]

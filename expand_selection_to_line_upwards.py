@@ -64,3 +64,48 @@ class ExpandSelectionToLineDownwardsCommand(sublime_plugin.TextCommand):
         # enable soft undo line by line
         delay = 0
         sublime.set_timeout(callback, delay)
+
+
+class ShrinkSelectionByLineAtomicCommand(sublime_plugin.TextCommand):
+    def run(self, edit, upwards):
+        old_sel = list(self.view.sel())
+        new_sel = []
+        for region in old_sel:
+            b = region.begin()
+            e = region.end()
+            begin_line = self.view.line(b)
+            end_line = self.view.line(e)
+            if begin_line == end_line:
+                b = begin_line.begin()
+                e = b
+            elif upwards:
+                e = end_line.begin() - 1
+            else:
+                b = begin_line.end() + 1
+                b, e = e, b
+            new_region = sublime.Region(b, e)
+            new_sel.append(new_region)
+        self.view.sel().clear()
+        self.view.sel().add_all(new_sel)
+
+
+class ShrinkSelectionByLineUpwardsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        def callback():
+            cmd = "shrink_selection_by_line_atomic"
+            args = {"upwards": True}
+            self.view.run_command(cmd, args)
+        # enable soft undo line by line
+        delay = 0
+        sublime.set_timeout(callback, delay)
+
+
+class ShrinkSelectionByLineDownwardsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        def callback():
+            cmd = "shrink_selection_by_line_atomic"
+            args = {"upwards": False}
+            self.view.run_command(cmd, args)
+        # enable soft undo line by line
+        delay = 0
+        sublime.set_timeout(callback, delay)
